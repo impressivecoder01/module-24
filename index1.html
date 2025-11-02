@@ -11,6 +11,9 @@
             color: antiquewhite;
             background-color: honeydew;
         }
+        #food-title{
+            background-color: #000;
+        }
     </style>
 </head>
 <body>
@@ -20,11 +23,23 @@
     <main>
         <h1>Welcome to my DOM</h1>
         <ul>
-            <li>1</li>
+            <li class="drink">1</li>
             <li>2</li>
             <li>3</li>
             <li>Learned how can i call any tag by document.getElementByTagName</li>
         </ul>
+        <section>
+            <h1 id="food-title">Foods I love</h1>
+            <ul>
+                <li class="drink">Rice</li>
+                <li>Potato</li>
+                <li>Fish</li>
+                <li>Burger</li>
+                <li class="drink">Water</li>
+                <li class="drink">coconat</li>
+                <li id="fvt">polau</li>
+            </ul>
+        </section>
     </main>
     <script>
         console.log('hello')
@@ -48,6 +63,21 @@
         for(const h of h1tag){
             console.log(h)
             console.log(h.innerText)
+        }
+        // get by id
+        const foodElement = document.getElementById('food-title');
+        console.log(foodElement, 'h')
+        console.log(foodElement.innerText, 'h')
+        foodElement.innerText = 'Food i love to eat'
+        const fvt = document.getElementById('fvt');
+        console.log(fvt)
+        console.log(fvt.innerText)
+        fvt.innerText= 'polau __ biriany + dal'
+        // get elements by class name
+        const classNames = document.getElementsByClassName('drink')
+        console.log(classNames)
+        for(const className of classNames){
+            console.log(className.innerText)
         }
     </script>
     <script src="./JS/class1.js"></script>
