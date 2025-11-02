@@ -14,6 +14,9 @@
         #food-title{
             background-color: #000;
         }
+        .number .drink {
+            font-weight: 900;
+        }
     </style>
 </head>
 <body>
@@ -22,13 +25,20 @@
     </header>
     <main>
         <h1>Welcome to my DOM</h1>
-        <ul>
-            <li class="drink">1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>Learned how can i call any tag by document.getElementByTagName</li>
-        </ul>
-        <section>
+        <section id="old" class="number">
+            <ul>
+
+                <li class="drink">1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>Learned how can i call any tag by document.getElementByTagName</li>
+            </ul>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa explicabo accusamus enim quis tempore adipisci sed vitae. Dignissimos cumque vitae alias perspiciatis, eveniet rem laudantium incidunt, at sapiente <span>oli gol</span> eum soluta. </p>
+            <h1>my name <span>doing job</span></h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum asperiores nulla, numquam delectus doloremque minus recusandae cumque maiores necessitatibus voluptatem iusto earum dicta esse iure, quod <span>findsssssssssss</span>similique ipsa. Porro, modi.</p>
+        </section>
+
+        <section class="food">
             <h1 id="food-title">Foods I love</h1>
             <ul>
                 <li class="drink">Rice</li>
@@ -79,6 +89,18 @@
         for(const className of classNames){
             console.log(className.innerText)
         }
+
+        // query selector all
+        const spanFind = document.querySelectorAll('.number p span')
+        console.log(spanFind)
+        for(let span of spanFind){
+            console.log(span)
+            console.log(span.innerHTML)
+        }
+        const onlyOne = document.querySelector('.number span')
+        console.log(onlyOne, 'only')
+        console.log(onlyOne.innerText, 'onlyinnertext')
+        onlyOne.innerText = 'oooooooooooooooooooooooooooooooooooooooo'
     </script>
     <script src="./JS/class1.js"></script>
 </body>
