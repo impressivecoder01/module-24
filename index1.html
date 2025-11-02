@@ -29,7 +29,7 @@
             <ul>
 
                 <li class="drink">1</li>
-                <li>2</li>
+                <li id="twoo">2</li>
                 <li>3</li>
                 <li>Learned how can i call any tag by document.getElementByTagName</li>
             </ul>
@@ -100,7 +100,13 @@
         const onlyOne = document.querySelector('.number span')
         console.log(onlyOne, 'only')
         console.log(onlyOne.innerText, 'onlyinnertext')
-        onlyOne.innerText = 'oooooooooooooooooooooooooooooooooooooooo'
+        onlyOne.innerText = 'oooooooooooooooooooooooooooooooooooooooo';
+        const bg = document.getElementsByClassName('drink')
+        console.log(bg)
+       const bT = document.getElementById('twoo')
+       console.log(bT)
+       bT.style.backgroundColor = 'yellow'
+       bT.style.color = 'red'
     </script>
     <script src="./JS/class1.js"></script>
 </body>
