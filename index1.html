@@ -23,10 +23,32 @@
             <li>1</li>
             <li>2</li>
             <li>3</li>
+            <li>Learned how can i call any tag by document.getElementByTagName</li>
         </ul>
     </main>
     <script>
         console.log('hello')
+        // class 2--> Traversing Dom - GetElementsByTagName
+        console.log('Document Object Model')
+        const student = {
+            name: 'Abul mia', 
+            id: 112,
+            study: function(subject){
+                console.log('Subject Name:', subject)
+            }
+        }
+        const liCollections = document.getElementsByTagName('li');
+        console.log(liCollections)
+        for(const liCollection of liCollections){
+            console.log(liCollection, 'loop')
+            console.log(liCollection.innerText, 'loop innerText')
+        }
+        const h1tag = document.getElementsByTagName('h1')
+        console.log(h1tag,'h') 
+        for(const h of h1tag){
+            console.log(h)
+            console.log(h.innerText)
+        }
     </script>
     <script src="./JS/class1.js"></script>
 </body>
