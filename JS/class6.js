@@ -10,3 +10,14 @@ for(let section of sections){
     // section.style.borderRadius = '50px' 
     section.classList.add('section-card')
 }
+// console.log(document.getElementById('players-container').childNodes[0])
+console.log(document.getElementById('players-container').childNodes[0])
+console.log(document.getElementById('players-container').childNodes[1])
+console.log(document.getElementById('players-container').childNodes[2])
+console.log(document.getElementById('players-container').childNodes[3])
+// console.log(document.getElementById('players-container').childNodes[3].parentNode.parentNode.parentNode.parentNode.parentNode.parentNode)
+const now = document.createElement('li')
+now.innerText = 'now new player'
+console.log(now)
+const playerList = document.getElementById('player-list');
+playerList.appendChild(now)
