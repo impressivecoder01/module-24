@@ -18,6 +18,6 @@ console.log(document.getElementById('players-container').childNodes[3])
 // console.log(document.getElementById('players-container').childNodes[3].parentNode.parentNode.parentNode.parentNode.parentNode.parentNode)
 const now = document.createElement('li')
 now.innerText = 'now new player'
-console.log(now)
+// console.log(now)
 const playerList = document.getElementById('player-list');
 playerList.appendChild(now)
