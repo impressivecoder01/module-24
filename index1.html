@@ -50,6 +50,16 @@
                 <li id="fvt">polau</li>
             </ul>
         </section>
+        <section>
+            <h1>Players</h1>
+            <ul>
+                <li>messi</li>
+                <li>pessi</li>
+                <li>gessi</li>
+                <li>cessi</li>
+                <li>kessi</li>
+            </ul>
+        </section>
     </main>
     <script>
         console.log('hello')
@@ -107,6 +117,15 @@
        console.log(bT)
        bT.style.backgroundColor = 'yellow'
        bT.style.color = 'red'
+       let items = document.getElementsByClassName('drink');
+       items[1].style.backgroundColor = 'green'
+       for(let item of items){
+        console.log(item,'ssss')
+        item.style.border = '2px red solid';
+        item.style.margin = '20px'
+        item.style.padding = '20px'
+        item.innerText= 'change all those'
+       }
     </script>
     <script src="./JS/class1.js"></script>
 </body>
