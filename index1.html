@@ -50,7 +50,7 @@
                 <li id="fvt">polau</li>
             </ul>
         </section>
-        <section>
+        <section id="players-container">
             <h1>Players</h1>
             <ul>
                 <li>messi</li>
@@ -62,65 +62,68 @@
         </section>
     </main>
     <script>
-        console.log('hello')
+        console.log(document.getElementById('players-container').innerText)
+        console.log(document.getElementById('players-container').innerHTML)
+        
+        // console.log('hello')
         // class 2--> Traversing Dom - GetElementsByTagName
         console.log('Document Object Model')
         const student = {
             name: 'Abul mia', 
             id: 112,
             study: function(subject){
-                console.log('Subject Name:', subject)
+                // console.log('Subject Name:', subject)
             }
         }
         const liCollections = document.getElementsByTagName('li');
-        console.log(liCollections)
+        // console.log(liCollections)
         for(const liCollection of liCollections){
-            console.log(liCollection, 'loop')
-            console.log(liCollection.innerText, 'loop innerText')
+            // console.log(liCollection, 'loop')
+            // console.log(liCollection.innerText, 'loop innerText')
         }
         const h1tag = document.getElementsByTagName('h1')
         console.log(h1tag,'h') 
         for(const h of h1tag){
-            console.log(h)
-            console.log(h.innerText)
+            // console.log(h)
+            // console.log(h.innerText)
         }
         // get by id
         const foodElement = document.getElementById('food-title');
-        console.log(foodElement, 'h')
-        console.log(foodElement.innerText, 'h')
+        // console.log(foodElement, 'h')
+        // console.log(foodElement.innerText, 'h')
         foodElement.innerText = 'Food i love to eat'
         const fvt = document.getElementById('fvt');
-        console.log(fvt)
-        console.log(fvt.innerText)
+        // console.log(fvt)
+        // console.log(fvt.innerText)
         fvt.innerText= 'polau __ biriany + dal'
         // get elements by class name
         const classNames = document.getElementsByClassName('drink')
         console.log(classNames)
         for(const className of classNames){
-            console.log(className.innerText)
+            // console.log(className.innerText)
         }
 
         // query selector all
         const spanFind = document.querySelectorAll('.number p span')
         console.log(spanFind)
         for(let span of spanFind){
-            console.log(span)
-            console.log(span.innerHTML)
+            // console.log(span)
+            // console.log(span.innerHTML)
         }
         const onlyOne = document.querySelector('.number span')
-        console.log(onlyOne, 'only')
-        console.log(onlyOne.innerText, 'onlyinnertext')
+        // console.log(onlyOne, 'only')
+        // console.log(onlyOne.innerText, 'onlyinnertext')
         onlyOne.innerText = 'oooooooooooooooooooooooooooooooooooooooo';
         const bg = document.getElementsByClassName('drink')
-        console.log(bg)
+        // console.log(bg)
        const bT = document.getElementById('twoo')
-       console.log(bT)
+    //    console.log(bT)
        bT.style.backgroundColor = 'yellow'
        bT.style.color = 'red'
        let items = document.getElementsByClassName('drink');
        items[1].style.backgroundColor = 'green'
        for(let item of items){
-        console.log(item,'ssss')
+        // console.log(item,'ssss')
         item.style.border = '2px red solid';
         item.style.margin = '20px'
         item.style.padding = '20px'
@@ -128,5 +131,6 @@
        }
     </script>
     <script src="./JS/class1.js"></script>
+    <script src="./JS/class6.js"></script>
 </body>
 </html>
